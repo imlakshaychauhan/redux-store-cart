@@ -6,7 +6,9 @@ const Navbar = () => {
     const products = useSelector((state) => state.cart);
   return (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }} >
-        <span className='logo' >REDUX STORE CART</span>
+        <span className='logo'>
+          <Link className='navLink' to="/" > REDUX STORE CART </Link>
+        </span>
         <div>
             <Link className='navLink' to="/">Home</Link>
             <Link className='navLink' to="/cart">Cart</Link>
